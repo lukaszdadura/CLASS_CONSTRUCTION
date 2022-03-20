@@ -19,7 +19,7 @@ public class Util {
     }
 
     public static boolean isPhoneNumberValid(String phoneNumber) {
-        if (phoneNumber.matches("[0-9]{9}")) {
+        if (!phoneNumber.matches("[0-9]{9}")) {
             throw new IllegalArgumentException("The input you have provided is not in 000000000 pattern");
         } else {
             return true;
@@ -27,8 +27,8 @@ public class Util {
     }
 
     public static boolean isNipNumberValid(String nipNumber) {
-        if (nipNumber.matches("[0-9]{10}")) {
-            throw new IllegalArgumentException("The input you have provided is not in 0000000000 pattern");
+        if (!nipNumber.matches("[0-9]{10}")) {
+            throw new IllegalArgumentException("The input you have provided is not in 1111111111 pattern");
         } else {
             return true;
         }

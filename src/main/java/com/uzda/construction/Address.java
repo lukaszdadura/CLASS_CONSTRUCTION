@@ -27,6 +27,41 @@ public class Address {
         if (isInputValid(country)) {
             this.country = country;
         }
+    }
 
+    public String getStreet() {
+        return street;
+    }
+
+    public String getBuildingNumber() {
+        return buildingNumber;
+    }
+
+    public String getZipCode() {
+        return zipCode;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setStreet(String street) {
+        this.street = street;
+    }
+
+    public void setBuildingNumber(String buildingNumber) {
+        this.buildingNumber = buildingNumber;
+    }
+
+    public void setZipCode(String zipCode) {
+        this.zipCode = zipCode;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
     }
 }
