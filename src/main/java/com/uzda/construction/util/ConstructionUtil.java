@@ -1,6 +1,6 @@
-package com.uzda.construction;
+package com.uzda.construction.util;
 
-public class Util {
+public class ConstructionUtil {
 
     public static boolean isInputValid(String userInput) {
         if (userInput == null || userInput.isEmpty() || userInput.trim().isEmpty()) {

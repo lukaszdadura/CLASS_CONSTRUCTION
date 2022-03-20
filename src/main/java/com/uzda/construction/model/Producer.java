@@ -1,6 +1,6 @@
-package com.uzda.construction;
+package com.uzda.construction.model;
 
-import static com.uzda.construction.Util.*;
+import static com.uzda.construction.util.ConstructionUtil.*;
 
 public class Producer {
 

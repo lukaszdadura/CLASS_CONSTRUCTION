@@ -1,4 +1,6 @@
-package com.uzda.construction;
+package com.uzda.construction.model;
+
+import com.uzda.construction.enumeration.Fuel;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;

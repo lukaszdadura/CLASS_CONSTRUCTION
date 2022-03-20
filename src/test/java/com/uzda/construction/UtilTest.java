@@ -1,5 +1,6 @@
 package com.uzda.construction;
 
+import com.uzda.construction.util.ConstructionUtil;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -10,7 +11,7 @@ class UtilTest {
     @Test
     void shouldThrowExceptionWhenInputIsEmpty() {
         Exception exception = assertThrows(IllegalArgumentException.class, () -> {
-            Util.isInputValid("");
+            ConstructionUtil.isInputValid("");
         });
 
         String expectedMessage = "The input you have provided is null, empty or blank";
@@ -22,7 +23,7 @@ class UtilTest {
     @Test
     void shouldThrowExceptionWhenInputIsBlank() {
         Exception exception = assertThrows(IllegalArgumentException.class, () -> {
-            Util.isInputValid("  ");
+            ConstructionUtil.isInputValid("  ");
         });
 
         String expectedMessage = "The input you have provided is null, empty or blank";
@@ -34,7 +35,7 @@ class UtilTest {
     @Test
     void shouldThrowExceptionWhenInputIsNull() {
         Exception exception = assertThrows(IllegalArgumentException.class, () -> {
-            Util.isInputValid(null);
+            ConstructionUtil.isInputValid(null);
         });
 
         String expectedMessage = "The input you have provided is null, empty or blank";
@@ -46,7 +47,7 @@ class UtilTest {
     @Test
     void shouldThrowExceptionWhenZipCodeIsInWrongFormat() {
         Exception exception = assertThrows(IllegalArgumentException.class, () -> {
-            Util.isZipCodeValid("111-11");
+            ConstructionUtil.isZipCodeValid("111-11");
         });
 
         String expectedMessage = "The input you have provided is not in 00-000 pattern";
@@ -58,7 +59,7 @@ class UtilTest {
     @Test
     void shouldThrowExceptionWhenPhoneNumberIsTooShort() {
         Exception exception = assertThrows(IllegalArgumentException.class, () -> {
-            Util.isPhoneNumberValid("11111");
+            ConstructionUtil.isPhoneNumberValid("11111");
         });
 
         String expectedMessage = "The input you have provided is not in 000000000 pattern";
@@ -70,7 +71,7 @@ class UtilTest {
     @Test
     void shouldThrowExceptionWhenNipNumberIsWithLetters() {
         Exception exception = assertThrows(IllegalArgumentException.class, () -> {
-            Util.isNipNumberValid("11111AAAAA");
+            ConstructionUtil.isNipNumberValid("11111AAAAA");
         });
 
         String expectedMessage = "The input you have provided is not in 1111111111 pattern";

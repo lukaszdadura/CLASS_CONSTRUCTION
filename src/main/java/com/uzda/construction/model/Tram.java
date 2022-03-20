@@ -1,4 +1,4 @@
-package com.uzda.construction;
+package com.uzda.construction.model;
 
 import java.time.LocalDate;
 

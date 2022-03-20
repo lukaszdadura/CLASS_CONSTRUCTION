@@ -1,7 +1,7 @@
-package com.uzda.construction;
+package com.uzda.construction.model;
 
-import static com.uzda.construction.Util.isInputValid;
-import static com.uzda.construction.Util.isZipCodeValid;
+import static com.uzda.construction.util.ConstructionUtil.isInputValid;
+import static com.uzda.construction.util.ConstructionUtil.isZipCodeValid;
 
 public class Address {
 

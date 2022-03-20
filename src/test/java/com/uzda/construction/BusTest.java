@@ -1,5 +1,9 @@
 package com.uzda.construction;
 
+import com.uzda.construction.enumeration.Fuel;
+import com.uzda.construction.model.Address;
+import com.uzda.construction.model.Bus;
+import com.uzda.construction.model.Producer;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
